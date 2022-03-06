@@ -1,5 +1,6 @@
 body {
     background-color: whitesmoke;
+    margin: 0;
 }
 
 a {
@@ -66,7 +67,7 @@ a {
 .friends {
     min-height: 100vh;
     font-family: Roboto;
-    background-color: yellow;
+    background-color: #feeedf;
 }
 
 .friends_wrapper {
