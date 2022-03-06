@@ -1,0 +1,177 @@
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.intro {
+    background-image: url("background.jpg");
+    min-height: 100vh;
+    font-family: Roboto;
+}
+
+.intro_wrapper {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1 {
+    font-family: Philosopher;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.intro p {
+    font-size: 24px;
+    max-width: 640px;
+}
+
+.about {
+    min-height: 100vh;
+    font-family: Roboto; 
+}
+
+.about_wrapper {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h1 {
+    font-family: Philosopher;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.about p {
+    font-size: 24px;
+    max-width: 640px;
+}
+
+.friends {
+    min-height: 100vh;
+    font-family: Roboto;
+    background-color: yellow;
+}
+
+.friends_wrapper {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends h1 {
+    font-family: Philosopher;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.friends img {
+    border-radius: 1em;
+    width: 150px;
+}
+
+
+.projects {
+    min-height: 50vh;
+    font-family: Roboto;
+    background-color: plum;
+}
+
+.projects_wrapper {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects h1 {
+    font-family: Philosopher;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.projects img {
+    width: 15em;
+    border-radius: 1em; 
+}
+
+.btn {
+    background-color: #3e51ff;
+	color: #fff;
+	border: none;
+	padding: 1em;
+	border-radius: 1em;
+	margin: 1em;
+}
+
+.tools {
+    background: linear-gradient(45deg, #f88cff 0%, #8cb9ff 100%);
+    min-height: 50vh;
+    font-family: Roboto;
+}
+
+.tools_wrapper {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools h1 {
+    font-family: Philosopher;
+    font-size: 48px;
+    margin-bottom: 60px; 
+}
+
+.pages_logo {
+    font-family: Philosopher;
+    font-size: 24px;
+    margin-right: 500px;
+}
+
+.pages {
+    font-size: 24px;
+    margin-right: 500px;
+}
+
+.bots {
+    font-size: 24px;
+}
+
+.games_logo {
+    font-family: Philosopher;
+    font-size: 24px;
+    margin-left: 500px;
+}
+
+.games {
+    font-size: 24px;
+    margin-left: 500px;
+}
+
+.bots_logo {
+    font-family: Philosopher;
+}
