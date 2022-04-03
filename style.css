@@ -122,8 +122,14 @@ a {
 	color: #fff;
 	border: none;
 	padding: 1em;
-	border-radius: 1em;
 	margin: 1em;
+    border-radius: 5px;
+    transition: 1000ms;
+}
+
+.btn:hover {
+    background-color: #DE9607;
+	border-radius: 1em;
 }
 
 .tools {
@@ -188,10 +194,12 @@ a {
     height: 450px;
     margin-top: 102px;
     margin-bottom: 101px;
+    transition: 2s;
 }
 
 .skills_img:hover {
     filter: sepia(50%);
+    border-radius: 35px;
 }
 
 .skills_left {
@@ -381,4 +389,39 @@ a {
     margin-top: 100px;
     margin-bottom: 50px;
     font-weight: bold;
+}
+
+.intro_logo {
+    animation: introcolor 2.5s infinite;
+}
+
+.friend {
+    animation: friendcolor 5.5s infinite;
+}
+
+@keyframes introcolor {
+    0% {
+        color: #34547A;
+    }
+    50% {
+        color: #07DE38;
+    }
+    100% {
+        color: #34547A;
+    }
+}
+
+@keyframes friendcolor {
+    0% {
+        color: #07DE98;
+    }
+    25% {
+        color: #15F505;
+    }
+    50% {
+        color: #D7DE07;
+    }
+    100% {
+        color: #FAC82F;
+    }
 }
