@@ -1,20 +1,8 @@
-$(document).ready(function() {
+var aboutLogo = document.getElementById('myAboutLogo');
+var logo = document.getElementById('myLogo');
 
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-});
+aboutLogo.onclick = function() {
+    alert("Вы нашли пасхалку!");
+    logo.style.color = "#07DE38";
+    logo.style.animation = "none";
+}

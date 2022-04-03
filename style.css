@@ -393,10 +393,11 @@ a {
 
 .intro_logo {
     animation: introcolor 2.5s infinite;
+    position: relative;
 }
 
 .friend {
-    animation: friendcolor 5.5s infinite;
+    animation: friendcolor 10s infinite;
 }
 
 @keyframes introcolor {
@@ -421,7 +422,96 @@ a {
     50% {
         color: #D7DE07;
     }
+    75% {
+        color: red;
+    }
     100% {
-        color: #FAC82F;
+        color: rebeccapurple;
+    }
+}
+
+.bottom {
+	background-color: #181818;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.bottom .images img {
+	width: 15mm;
+	margin: 2mm;
+	filter: invert(100%);
+}
+
+.bottom h2 {
+    font-family: Philosopher;
+}
+
+.bottom h4 {
+    font-family: Philosopher;
+    font-size: 18px;
+}
+
+.bottom_logo {
+    animation: introcolor 2.5s infinite;
+    position: relative;
+}
+
+.intro_logo::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    background: #34547A;
+    animation: rightleft 5s infinite;
+}
+
+.intro_logo:hover::before {
+    background: #34547A;
+    opacity: 0.5;
+    width: 365px;
+    height: 52px;
+    top: 0;
+    transition: 5.5s;
+}
+
+@keyframes rightleft {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 350px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.bottom_logo::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    background: #34547A;
+    animation: bottomrightleft 5s infinite;
+}
+
+@keyframes bottomrightleft {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 165px;
+    }
+    100% {
+        left: 0;
     }
 }
